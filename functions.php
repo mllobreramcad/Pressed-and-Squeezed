@@ -132,6 +132,9 @@ add_action( 'widgets_init', 'pressed_and_squeezed_widgets_init' );
  */
 function pressed_and_squeezed_scripts() {
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
+  
+  wp_enqueue_script( 'josefin', 'http://use.edgefonts.net/josefin-slab.js', false, false, false );
+  wp_enqueue_script( 'merriweather', 'http://use.edgefonts.net/merriweather.js', false, false, false );
 
 	// wp_enqueue_script( 'small-menu', get_template_directory_uri() . '/js/small-menu.js', array( 'jquery' ), '20120206', true );
 
